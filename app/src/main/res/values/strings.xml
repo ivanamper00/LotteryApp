@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Xổ số Hậu Giang</string>
+    <string name="prediction">Phỏng đoán</string>
+    <string name="play">Chơi</string>
+    <string name="home">Nhà</string>
+    <string name="format_draw">The prediction draw%s%s%s listed below:</string>
+    <string name="play_segment_sub">Chọn một vài quả bóng sẽ hoàn thành số chiến thắng của bạn</string>
+    <string name="pick_random_ball">Chọn bóng ngẫu nhiên</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+
+    <fragment
+        android:id="@+id/predictionsFragment"
+        android:name="com.allwin.haugiang.prediction.ui.PredictionsFragment"
+        android:label="PredictionsFragment" />
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.allwin.haugiang.dashboard.ui.DashboardFragment"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" >
+            <argument
+                android:name="item"
+                app:argType="string"
+                android:defaultValue=""/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.allwin.haugiang.play.ui.PlayFragment"
+        android:label="PlayFragment" >
+        <action
+            android:id="@+id/action_playFragment_to_segmentPlayFragment"
+            app:destination="@id/segmentPlayFragment" >
+            <argument
+                android:name="segment"
+                app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/segmentPlayFragment"
+        android:name="com.allwin.haugiang.play.ui.segment_play.SegmentPlayFragment"
+        android:label="SegmentPlayFragment">
+        <argument
+            android:name="segment"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.allwin.haugiang.dashboard.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="item"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+</navigation>
