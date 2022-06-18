@@ -37,7 +37,7 @@ abstract class SegmentWithPredictionItemModel: EpoxyModelWithHolder<SegmentWithP
         super.bind(holder)
         with(holder.binding){
 
-            segmentImage.setImageResource(segment?.imageResource ?: 0)
+            segmentImage.setBackgroundResource(segment?.imageResource ?: 0)
 
             root.setOnClickListener {
                 onItemClick?.invoke()
